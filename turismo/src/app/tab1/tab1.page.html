@@ -1,17 +1,57 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
+  <ion-toolbar color="dark">
+    <ion-title> Conheça Rio Grande </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-card>
+    <ion-card-header>
+      <ion-img src="assets/images/EuAmoRG.jpg"></ion-img>
+      <ion-card-title>Cidade Histórica</ion-card-title>
+    </ion-card-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+    <ion-card-content class="ion-text-justify">
+      Cidade mais antiga do estado, Rio Grande está localizada na margem Sul do
+      estuário que conduz ao oceano as águas da imensa Laguna dos Patos e seus
+      afluentes. Em 1680, Portugal funda a Colônia do Sacramento, na margem
+      esquerda do estuário do Prata, defronte a Buenos Aires. Próximo à barra
+      chamada do Rio Grande de São Pedro, único acesso oferecido à navegação na
+      costa contínua deveria estabelecer-se o núcleo pioneiro, de onde Portugal
+      faria irradiar o povoamento, consolidando a posse da terra.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Seguimento</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item href="https://www.riogrande.rs.gov.br/pagina/roteiro-turistico-ilha-dos-marinheiros/" target="_blank" class="ion-activated">
+          <ion-icon name="leaf" slot="start"></ion-icon>
+          <ion-card-title>Agroturismo</ion-card-title>
+        </ion-item>
+        <ion-item href="https://www.tripadvisor.com.br/Attraction_Review-g2613499-d3308449-Reviews-Praia_Molhes_da_Barra-Cassino_State_of_Rio_Grande_do_Sul.html" target="_blank" class="ion-activated">
+          <ion-icon name="bicycle" slot="start"></ion-icon>
+          <ion-card-title>Aventura</ion-card-title>
+        </ion-item>
+
+        <ion-item href="https://quantocustaviajar.com/blog/estacao-ecologica-do-taim-rio-grande-do-sul/" target="_blank" class="ion-activated">
+          <ion-icon name="wine" slot="start"></ion-icon>
+          <ion-card-title>Ecoturismo</ion-card-title>
+        </ion-item>
+
+        <ion-item href="https://diariodamanhapelotas.com.br/site/projeto-em-rio-grande-preve-maior-complexo-eolico-do-rs/" target="_blank" class="ion-activated">
+          <ion-icon name="walk" slot="start"></ion-icon>
+          <ion-card-title>parques</ion-card-title>
+        </ion-item>
+
+        <ion-item href="https://territorios.com.br/cassino-a-maior-praia-do-mundo/" target="_blank" class="ion-activated">
+          <ion-icon name="sunny" slot="start"></ion-icon>
+          <ion-card-title>Praias</ion-card-title>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
