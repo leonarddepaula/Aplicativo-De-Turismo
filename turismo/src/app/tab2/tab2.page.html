@@ -1,17 +1,141 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
+  <ion-toolbar color="tertiary">
+    <ion-title> CASSINO </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-card>
+    <img alt="Silhouette of mountains" src="assets/images/cassino1.jpeg" />
+    <ion-card-header>
+      <ion-card-title>Praia Do Cassino</ion-card-title>
+      <ion-card-subtitle>A maior praia do mundo</ion-card-subtitle>
+    </ion-card-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+    <ion-card-content>
+      Este é o primeiro balneário brasileiro que foi planificado: ele primeiro
+      nasceu nas plantas de engenheiros/técnicos e depois foi efetivado. O
+      motivo de sua construção era atrair as elites da metade Sul e de Porto
+      Alegre para usufruírem dos banhos de mar que eram considerados um remédio
+      para diferentes males do corpo.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-list>
+    <ion-item-sliding>
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img
+            src="https://www.sema.rs.gov.br/upload/recortes/202201/31164531_84451_GD.jpg"
+            alt=""
+          />
+        </ion-thumbnail>
+        <ion-label>
+          <ion-text color="primary">
+            <h2>Parque Eolico</h2>
+          </ion-text>
+          <p>Energia Limpa</p>
+        </ion-label>
+        <ion-note slot="end" color="success">Gratuito</ion-note>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option
+         <!-- AAA -->
+          color="success"
+        >
+          <ion-icon name="navigate-outline"></ion-icon>
+        </ion-item-option>
+        <ion-item-option (click)="like()">
+          <ion-icon name="star-outline"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+
+    <ion-item-sliding>
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img
+            src="https://www.rbsdirect.com.br/imagesrc/35648043.jpg?w=700&rv=2-10-05&safari"
+            alt=""
+          />
+        </ion-thumbnail>
+        <ion-label>
+          <ion-text color="primary">
+            <h2>Parque Urbano do Bolaxaa</h2>
+          </ion-text>
+          <p>
+            Espaço verde conta também com bosque em memória às vítimas da
+            covid-19 e em agradecimento aos profissionais da saúd
+          </p>
+        </ion-label>
+        <ion-note slot="end" color="success" color="success">Gratuito</ion-note>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option>Como Chegar?</ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+
+    <ion-item-sliding>
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img
+            src="https://www.riogrande.rs.gov.br/consulta/arquivos/noticia_foto/56b1fca38824e.jpg"
+            alt=""
+          />
+        </ion-thumbnail>
+        <ion-label>
+          <ion-text color="primary">
+            <h2>Horto Municipal do Cassino</h2>
+          </ion-text>
+          <p>Energia Limpa</p>
+        </ion-label>
+        <ion-note slot="end" color="success">Gratuito</ion-note>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option>Como Chegar?</ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+
+    <ion-item-sliding>
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgnlmG1byM87St8WBZZ2dydMGEAWzoKIEHRltIOmdnxaQ63Rdc5d61aGls4CkAl8ToGF8&usqp=CAU"
+            alt=""
+          />
+        </ion-thumbnail>
+        <ion-label>
+          <ion-text color="primary">
+            <h2>Moles da Barra</h2>
+          </ion-text>
+          <p>um verdadeiro espetáculo de engenharia</p>
+        </ion-label>
+        <ion-note slot="end" color="success">Gratuito</ion-note>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option>Como Chegar?</ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+
+    <ion-item-sliding>
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img
+            src="https://www.gentedeopiniao.com.br/uploads/noticias/2019/05/05/32lwgp335zmss.jpg"
+            alt=""
+          />
+        </ion-thumbnail>
+        <ion-label>
+          <ion-text color="primary">
+            <h2>Navio Altair</h2>
+          </ion-text>
+          <p>A história de um cargueiro encalhado à beira mar</p>
+        </ion-label>
+        <ion-note slot="end" color="success">Gratuito</ion-note>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option>Como Chegar?</ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
 </ion-content>
