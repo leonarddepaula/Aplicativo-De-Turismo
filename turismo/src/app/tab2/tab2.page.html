@@ -6,7 +6,7 @@
 
 <ion-content [fullscreen]="true">
   <ion-card>
-    <img alt="Silhouette of mountains" src="assets/images/cassino1.jpeg" />
+    <img alt="Silhouette of mountains" src="assets/images/cassinoCarros.jpeg" />
     <ion-card-header>
       <ion-card-title>Praia Do Cassino</ion-card-title>
       <ion-card-subtitle>A maior praia do mundo</ion-card-subtitle>
@@ -39,14 +39,15 @@
         <ion-note slot="end" color="success">Gratuito</ion-note>
       </ion-item>
       <ion-item-options side="end">
-        <ion-item-option
-         <!-- AAA -->
-          color="success"
-        >
-          <ion-icon name="navigate-outline"></ion-icon>
+        <ion-item-option (click)="openSite('https://goo.gl/maps/yGpxgAVbVNQ6oKBt8')"  color="danger">
+          <ion-icon
+            slot="icon-only"
+            name="information-circle-outline"
+          ></ion-icon>
         </ion-item-option>
-        <ion-item-option (click)="like()">
-          <ion-icon name="star-outline"></ion-icon>
+
+        <ion-item-option (click)="like()" >
+          <ion-icon slot="icon-only" name="star-outline"></ion-icon>
         </ion-item-option>
       </ion-item-options>
     </ion-item-sliding>
@@ -68,10 +69,19 @@
             covid-19 e em agradecimento aos profissionais da saúd
           </p>
         </ion-label>
-        <ion-note slot="end" color="success" color="success">Gratuito</ion-note>
+        <ion-note slot="end" color="success">Gratuito</ion-note>
       </ion-item>
       <ion-item-options side="end">
-        <ion-item-option>Como Chegar?</ion-item-option>
+        <ion-item-option (click)="openSite('https://goo.gl/maps/TL1RiCv6Tatadnio6')"  color="danger">
+          <ion-icon
+            slot="icon-only"
+            name="information-circle-outline"
+          ></ion-icon>
+        </ion-item-option>
+
+        <ion-item-option (click)="like()" >
+          <ion-icon slot="icon-only" name="star-outline"></ion-icon>
+        </ion-item-option>
       </ion-item-options>
     </ion-item-sliding>
 
@@ -85,14 +95,23 @@
         </ion-thumbnail>
         <ion-label>
           <ion-text color="primary">
-            <h2>Horto Municipal do Cassino</h2>
+            <h2>Horto Municipal Cassino</h2>
           </ion-text>
           <p>Energia Limpa</p>
         </ion-label>
         <ion-note slot="end" color="success">Gratuito</ion-note>
       </ion-item>
       <ion-item-options side="end">
-        <ion-item-option>Como Chegar?</ion-item-option>
+        <ion-item-option (click)="openSite('https://goo.gl/maps/TDZzuDSREZD1gi7x7')"  color="danger">
+          <ion-icon
+            slot="icon-only"
+            name="information-circle-outline"
+          ></ion-icon>
+        </ion-item-option>
+
+        <ion-item-option (click)="like()" >
+          <ion-icon slot="icon-only" name="star-outline"></ion-icon>
+        </ion-item-option>
       </ion-item-options>
     </ion-item-sliding>
 
@@ -113,7 +132,16 @@
         <ion-note slot="end" color="success">Gratuito</ion-note>
       </ion-item>
       <ion-item-options side="end">
-        <ion-item-option>Como Chegar?</ion-item-option>
+        <ion-item-option (click)="openSite('https://goo.gl/maps/yKhSHM8unMb36UhZA')"  color="danger">
+          <ion-icon
+            slot="icon-only"
+            name="information-circle-outline"
+          ></ion-icon>
+        </ion-item-option>
+
+        <ion-item-option (click)="like()" >
+          <ion-icon slot="icon-only" name="star-outline"></ion-icon>
+        </ion-item-option>
       </ion-item-options>
     </ion-item-sliding>
 
@@ -134,7 +162,16 @@
         <ion-note slot="end" color="success">Gratuito</ion-note>
       </ion-item>
       <ion-item-options side="end">
-        <ion-item-option>Como Chegar?</ion-item-option>
+        <ion-item-option (click)="openSite('https://goo.gl/maps/eGHY5AZPN8DWM3HS9')"  color="danger">
+          <ion-icon
+            slot="icon-only"
+            name="information-circle-outline"
+          ></ion-icon>
+        </ion-item-option>
+
+        <ion-item-option (click)="like()" >
+          <ion-icon slot="icon-only" name="star-outline"></ion-icon>
+        </ion-item-option>
       </ion-item-options>
     </ion-item-sliding>
   </ion-list>

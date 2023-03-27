@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-tab2',
@@ -6,13 +7,20 @@ import { Component } from '@angular/core';
   styleUrls: ['tab2.page.scss'],
 })
 export class Tab2Page {
-  constructor() {}
+  constructor(public toastController: ToastController) {}
 
-  openSite() {
-    window.open(
-      ''
-    );
+  openSite(url: string | URL | undefined) {
+    window.open(url);
   }
 
-  like() {}
+  async like() {
+    const toast = await this.toastController.create({
+      message: 'Obrigado Por Curtir Nossa Cidade!',
+      duration: 2000,
+      position: 'top'
+
+    });
+
+    await toast.present();
+  }
 }
