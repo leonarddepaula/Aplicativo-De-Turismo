@@ -1,17 +1,50 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="success">
     <ion-title>
-      Tab 3
+      Lugares Incríveis
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-list>
+  <ion-item [routerLink]="['/capilha']">
+    <ion-thumbnail slot="start">
+      <img src="https://www.rbsdirect.com.br/imagesrc/27603812.jpg?w=700" alt="">
+    </ion-thumbnail>
+    <ion-label>
+      <ion-text color="tertiary">
+        <h2>Praia Da Capilha</h2>
+      </ion-text>
+      <ion-badge color="danger" slot="end">Lagoa Mirim</ion-badge>
+    </ion-label>
+    <ion-icon name="chevron-forward-outline" slot="end"></ion-icon>
+  </ion-item>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <ion-item [routerLink]="['/ilhas']">
+    <ion-thumbnail slot="start">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKOxbxxmfSQCDkwncmH0QY8U8qUbpYy-LqCw&usqp=CAU" alt="">
+    </ion-thumbnail>
+    <ion-label>
+      <ion-text color="tertiary">
+        <h2>Ilha Dos Marinheiros</h2>
+      </ion-text>
+      <ion-badge color="danger" slot="end">Lagoa Dos Patos</ion-badge>
+    </ion-label>
+    <ion-icon name="chevron-forward-outline" slot="end"></ion-icon>
+  </ion-item>
+
+  <ion-item [routerLink]="['/taim']">
+    <ion-thumbnail slot="start">
+      <img src="https://quantocustaviajar.com/blog/wp-content/uploads/2021/08/estacao-ecologica-do-taim-rio-grande-do-sul-7-1024x684.jpg" alt="">
+    </ion-thumbnail>
+    <ion-label>
+      <ion-text color="tertiary">
+        <h2>Taim</h2>
+      </ion-text>
+      <ion-badge color="danger" slot="end">Patrimônio Natural Mundial</ion-badge>
+    </ion-label>
+    <ion-icon name="chevron-forward-outline" slot="end"></ion-icon>
+  </ion-item>
+</ion-list>
 </ion-content>
